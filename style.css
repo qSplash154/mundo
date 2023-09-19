@@ -7,6 +7,17 @@
 /*fonte da programação*/
 body *{
     font-family: 'Exo 2', sans-serif;
-    color: black
+    color: white;
 }
-
+/*imagem de fundo*/
+body {
+  background-image: url(./imagens/ceu\ estrelado.jpg);
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: 1740px 1000px;
+  
+}
+/*espessura da fonte*/
+#caixa p {
+  font-weight: 500;
+}
