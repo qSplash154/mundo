@@ -45,7 +45,7 @@ body {
   border: 1px solid red;
   /*padronizar o maximo da escala de largura*/
   width: 100%;
-  max-width: 560px;
+  max-width: 588px;
 
   /* o padding serve para poder centralizar em baixo como 0 que não muda nada e nas laterais com 24 que 
   padroniza as duas, automaticamente toda a pagina segue o padrão e não precisa alterar manual dps todas, pois, 
@@ -180,7 +180,7 @@ ul li a:hover {
 }
 
 /* media queries */
-@media (min-width: 700px) {
+@media (min-width: 320px) {
   :root {
     --bg-url: url(./imagens/foguete.jpg);
   }
