@@ -35,8 +35,8 @@ body *{
 /*imagem de fundo*/
 body {
   background: var(--bg-url) no-repeat top;
-  background-size: 100%;
-  
+  background-size: auto;
+  height: 100vh;
   
 }
 /*espessura da fonte*/
