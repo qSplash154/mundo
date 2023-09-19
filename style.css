@@ -3,20 +3,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  text-align: center;
+  text-decoration: none;
+  }
+
+  :root {
+    --text-color: rgb(255, 136, 0);
+    --bg-url: url(./imagens/ceu\ animado.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./imagens/moon-stars.svg);
+  }
+
+  .light {
+    --text-color: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/sun.svg);
   }
 
 /*fonte da programação*/
 body *{
     font-family: 'Exo 2', sans-serif;
-    color: blanchedalmond;
+    color: var(--text-color);
 }
 /*imagem de fundo*/
 body {
-  background-image: url(./imagens/ceu\ estrelado.jpg);
-  background-repeat: no-repeat;
-  background-position:top center;
-  background-size: 1740px 1000px;
+  background: var(--bg-url) no-repeat top;
+  background-size: 85%;
+  height: 100vh;
   
 }
 /*espessura da fonte*/
@@ -31,14 +51,14 @@ body {
   padroniza as duas, automaticamente toda a pagina segue o padrão e não precisa alterar manual dps todas, pois, 
   o container padroniza.*/
   padding: 0 24px;
-  margin: 56px auto 0px;
+  margin: 0 auto 0px;
   
 }
 
 #ceu {
   border: 1px solid red;
   /*tamanho da "caixa"*/
-  padding: 24px;
+  padding: 56px;
   
 }
 
@@ -50,11 +70,70 @@ body {
 }
 
 #ceu p {
-  font-weight: 500;
+  font-weight: 600;
   /* espaço entre a escrita e a imagem*/
-  line-height: 24px;
+  line-height: 16px;
   margin-top: 24px;
   /*centralizar a escrita*/
   text-align: center;
 }
 
+/* links */
+ul {
+  border: 1px solid red;
+  list-style: none;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*configuração dos links*/
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+
+  font-weight: 500;
+  transition: background 0.2s;
+}
+/*efeito ao passar o mouse por cima*/
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+/* icones social links*/
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50px;
+}
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+/*escrita final feito com amor*/
+#footer a {
+  padding: 24px 0;
+ 
+  font-size: 14px;
+  
+}
