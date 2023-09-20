@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" /> 
+    <link rel="stylesheet" href="./style.css"/> 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     
 </head>
 <body>
@@ -18,16 +21,20 @@
         </div> -->
 
         <div id="ceu">
-          <img src="./imagens/sol icone.png" alt="" />
-          <p>Você está preparado para uma viagem pela galáxia?</p>
-        </div>
+          <img src="./imagens/sol icone.png" alt="" class="animate__animated animate__bounceInDown" class="aos-init"/>
+          <div class="animate__animated animate__bounceInDown" class="aos-init">
+            <div id="texto" style="display: block;">
+              <p>Você está preparado para uma viagem pela galáxia?</p></div>
+          </div>
+      </div>
 
         <div id="switch" onclick="toggleMode()">
           <button></button>
           <span></span>
         </div>
 
-        <div id="retirar" style="display: none;"><ul> 
+        <div id="retirar" style="display: none;">
+          <ul> 
             <li><a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank">Vênus</a></li>
             <li><a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank">Terra</a></li>
             <li><a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank">Marte</a></li>
@@ -69,6 +76,9 @@
     ></script>
 
     <script src="./script.js"></script>
+    <script>
+      AOS.init();
+  </script>
     
 </body>
 </html>
