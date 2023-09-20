@@ -21,4 +21,5 @@ function toggleMode() {
 
 function showConsole(){
   alert("oi mundo")
+  
 }
