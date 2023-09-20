@@ -1,16 +1,24 @@
 function toggleMode() {
   const html = document.documentElement
   html.classList.toggle("light")
+// localizando o elemento retirar e setando a propriedade display, no none ele não aparece e no block aparece
 
   // pegar a tag img
-  const img = document.querySelector("#profile img")
+  const img = document.querySelector("#ceu img")
 
-  // substituir a imagem
   if (html.classList.contains("light")) {
-    // se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./assets/avatar-light.png")
+    document.getElementById("retirar").style.display="block"
+    document.getElementById("footer").style.display="block"
+    img.setAttribute("src", "./imagens/LUA ANIMADA.png")
   } else {
-    // set tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    document.getElementById("retirar").style.display="none"
+    document.getElementById("footer").style.display="none"
+    img.setAttribute("src", "./imagens/sol icone.png")
   }
+}
+// renderização condicional - mostrar alguma coisa dependendo de sua condição - 
+
+
+function showConsole(){
+  alert("oi mundo")
 }

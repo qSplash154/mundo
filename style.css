@@ -35,14 +35,15 @@ body *{
 /*imagem de fundo*/
 body {
   background: var(--bg-url) no-repeat top;
-  background-size: auto;
-  height: 100vh;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   
 }
 /*espessura da fonte*/
 
 #caixa {
-  border: 1px solid red;
+  
   /*padronizar o maximo da escala de largura*/
   width: 100%;
   max-width: 588px;
@@ -51,12 +52,12 @@ body {
   padroniza as duas, automaticamente toda a pagina segue o padrão e não precisa alterar manual dps todas, pois, 
   o container padroniza.*/
   padding: 0 24px;
-  margin: 0px auto 0px;
+  margin: -35px auto 0px;
   
 }
 
 #ceu {
-  border: 1px solid red;
+ 
   /*tamanho da "caixa"*/
   padding: 56px;
   
@@ -122,9 +123,10 @@ body {
 }
 /* links */
 ul {
-  border: 1px solid red;
+  
   list-style: none;
-  padding: 24px 0;
+  padding-top: 14px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -158,7 +160,8 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding-top: 12px;
+  padding-bottom: 0;
   font-size: 24px;
 }
 #social-links a {
@@ -173,10 +176,17 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 /*escrita final feito com amor*/
-#footer {
-  padding: 24px 0;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  margin-bottom: 8px;
   font-size: 14px;
-  
+  position: fixed;
+  bottom: 0;
 }
 
 /* media queries */
